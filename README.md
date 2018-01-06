@@ -3,3 +3,5 @@
 2. tmux
 3. sawfish
 4. and others
+5. i3wm
+6. Xterm
