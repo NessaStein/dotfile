@@ -263,8 +263,12 @@
 !*allowWindowOps: false
 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!Personal settings
+!make emacs keybinding works
+xterm*eightBitInput: false
 
-!Personal settings Usage: put it to /etc/X11/app-defaults/XTerm
+! face settings
 xterm*ScrollBar: false
 xterm*faceName: DejaVu Sans Mono Book
 xterm*faceNameDoublesize: WenQuanYi Micro Hei
