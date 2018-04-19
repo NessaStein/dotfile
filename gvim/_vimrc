@@ -74,3 +74,4 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 unmap <C-V>
+nunmap <C-A>
