@@ -28,13 +28,13 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-"ÉèÖÃÏÔÊ¾ĞĞºÅ
+"è®¾ç½®æ˜¾ç¤ºè¡Œå·
 set nu
 
-"È¡ÏûVIMµÄ×Ô¶¯±¸·İ¹¦ÄÜ
+"å–æ¶ˆVIMçš„è‡ªåŠ¨å¤‡ä»½åŠŸèƒ½
 set nobackup
 
-"ÉèÖÃËõ½ø£¬ÒÔ4¸ö¿Õ¸ñ×÷ÎªËõ½ø
+"è®¾ç½®ç¼©è¿›ï¼Œä»¥4ä¸ªç©ºæ ¼ä½œä¸ºç¼©è¿›
 set tabstop=4
 set sts=4
 set expandtab
@@ -43,7 +43,7 @@ set shiftwidth=4
 set autoindent
 set cindent
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim7.1ÔÚwindowsÏÂµÄ±àÂëÉèÖÃ¡£By Huadong.Liu
+" vim7.1åœ¨windowsä¸‹çš„ç¼–ç è®¾ç½®ã€‚By Huadong.Liu
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
@@ -52,19 +52,25 @@ set fileencoding=chinese
 else
 set fileencoding=utf-8
 endif
-"½â¾ö²Ëµ¥ÂÒÂë
+"è§£å†³èœå•ä¹±ç 
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
-"½â¾öconsleÊä³öÂÒÂë
+"è§£å†³consleè¾“å‡ºä¹±ç 
 language messages zh_CN.utf-8
 
 
-"ĞŞ¸ÄÅäÉ«·½°¸
+"ä¿®æ”¹é…è‰²æ–¹æ¡ˆ
 colorscheme desert
 
-"ÉèÖÃÔËĞĞpython´úÂëµÄ¿ì½İ¼ü£¬°ó¶¨µ½F12°´¼üÉÏ
+"è®¾ç½®è¿è¡Œpythonä»£ç çš„å¿«æ·é”®ï¼Œç»‘å®šåˆ°F12æŒ‰é”®ä¸Š
 map <F12> :!c:\Python27\python.exe %<CR>
 imap jj <Esc>
 imap <C-l> <Esc>$a
 
 let g:weibo_access_token = '8CBB2494B39D1E8A9E18909C9795D925&expires_in=7776000'
+
+"let windows C-V work
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+unmap <C-V>
